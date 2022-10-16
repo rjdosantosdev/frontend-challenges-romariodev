@@ -1,0 +1,47 @@
+/* Desktop */
+@media (min-width: 1400px) {
+  .item h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .main {
+    gap: 40px;
+  }
+
+  .item h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .item p {
+    font-size: 1rem;
+  }
+}
+
+/*  Smartphone */
+@media (max-width: 425px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .item .btn_cta {
+    max-width: 100%;
+  }
+
+  .social_media ul {
+    height: 150px;
+  }
+  .social_media ul {
+    margin: 80px;
+    height: 100%;
+    justify-content: center;
+  }
+}

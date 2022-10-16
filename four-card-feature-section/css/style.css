@@ -1,0 +1,131 @@
+html, 
+body,
+h1, h2, h3, h4, h5,
+p, ol, ul, a {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    --red-color: hsl(0, 78%, 62%);
+    --cyan-color: hsl(180, 100%, 39%);
+    --orange-color: hsl(34, 97%, 64%);
+    --blue-color: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;  
+    margin-top: 70px;
+}
+
+.main h1 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 25px;
+    color: var(--grayish-blue);
+}
+
+.main h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 20px;
+    color: var(--very-dark-blue);
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--grayish-blue);
+    max-width: 650px;
+    margin: 35px auto 20px auto;
+    text-align: center;
+}
+
+.cards {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.card-item-left h3, .card-item-right h3 .card-item h3 {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+.card-item-left p, .card-item-right p, .card-item p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--grayish-blue);
+    max-width: 284px;
+}
+
+div img {
+    float: right;
+}
+
+.card-item {
+    width: 317px;
+    height: 180px;
+    max-height: 100%;
+    margin: 30px 0;
+    padding: 33px;
+    border-radius: 3%;
+    box-shadow: 0px 5px 15px 5px #E2EAF3;
+}
+
+#card-item-top {
+    border-top: 6px solid var(--red-color);
+}
+
+#card-item-bottom {
+    border-top: 6px solid var(--orange-color);
+}
+
+.card-item-left, .card-item-right {
+    width: 317px;
+    height: 180px;
+    max-height: 100%;
+    border-radius: 3%;
+    padding: 33px;
+    box-shadow: 0px 5px 15px 5px #E2EAF3;
+}
+
+#card-item-left {
+    border-top: 6px solid var(--cyan-color);
+}
+
+#card-item-right {
+    border-top: 6px solid var(--blue-color);
+}
+
+.attribution { font-size: 14px; text-align: center; margin: 60px 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a:hover { color:var(--cyan-color); }
