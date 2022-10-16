@@ -1,0 +1,151 @@
+:root {
+  --Orange-color: hsl(25, 97%, 53%);
+  --White-color: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(215, 16%, 23%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: theme("borderColor.DEFAULT", currentColor);
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--Very-Dark-Blue);
+  color: var(--Light-Grey);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+}
+
+.colorIcon {
+  background-color: hsl(25, 97%, 53%) !important;
+  color: hsl(0, 0%, 100%);
+}
+
+.card,
+.cardState {
+  background-color: var(--Dark-Blue);
+  width: 410px;
+  padding: 30px;
+  border-radius: 27px;
+}
+
+.headerImg {
+  background-color: var(--Medium-Grey);
+  padding: 12px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.heading h1 {
+  font-size: 30px;
+  line-height: 46px;
+  color: var(--White-color);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.heading p {
+  color: var(--Light-Grey);
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.links div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Medium-Grey);
+  border-radius: 50%;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.links div:hover {
+  background-color: var(--Light-Grey);
+  color: var(--White-color);
+}
+
+.links div span {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.btn {
+  margin-top: 50px;
+  background-color: var(--Orange-color);
+  color: var(--White-color);
+  display: flex;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 27px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 12px 32px;
+}
+
+.btn:hover {
+  background-color: var(--White-color);
+  color: var(--Orange-color);
+}
+
+.cardState {
+  display: none;
+}
+
+.cardState div img {
+  margin: 0 auto;
+}
+.cardState .valuesSelect {
+  background-color: var(--Medium-Grey);
+  padding: 6px 12px;
+  display: block;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--Orange-color);
+  border-radius: 32px;
+  margin-top: 24px;
+  margin-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 185px;
+}
+
+.cardState h2 {
+  color: var(--White-color);
+  font-size: 30px;
+  line-height: 45.96px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cardState p {
+  text-align: center;
+  max-width: 36ch;
+  margin: 0 auto;
+}
