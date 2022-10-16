@@ -1,0 +1,96 @@
+.card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 90px;
+}
+
+.card .equilibrium {
+  width: 250px;
+  border-radius: 4px;
+}
+
+.card h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+
+  margin: 20px 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.card-text {
+  max-width: 24ch;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.card .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.info-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.info-item #info-price {
+  color: hsl(178, 100%, 50%);
+}
+
+.info-item #info-time {
+  color: hsl(215, 51%, 70%);
+}
+
+.coin {
+  color: hsl(178, 100%, 50%);
+}
+
+.div-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid hsl(215, 32%, 27%);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.div-bottom img {
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 50px;
+}
+
+.div-bottom p {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.div-bottom span {
+  color: hsl(215, 51%, 70%);
+}
+
+@media (max-width: 480px) {
+  .card .equilibrium {
+    width: 230px;
+  }
+
+  .card h2 {
+    font-size: 1.125rem;
+    margin: 15px 0;
+  }
+
+  .card p {
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,49 @@
+@media (max-width: 427px) {
+    .card-container {
+        max-width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+    }
+
+    .card { width: 100%; }
+
+    .attribution {
+        text-align: center;
+        max-width: 350px;
+        margin: 0 auto;
+        line-height: 21px;
+    }
+
+}
+
+@media (min-width: 428px) and (max-width: 1961px)  {
+    body {
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 18px;
+        background-color: var(--Dark-cyan);  
+    
+    
+        background-image: url('/images/bg-pattern-bottom.svg');
+        background-repeat: no-repeat;
+        background-position-x: 590px;
+        background-position-y: 300px;
+        background-size: cover;
+    }
+    
+    main {
+        background-image: url('/images/bg-pattern-top.svg');
+        background-repeat: no-repeat;
+        background-position: left top;
+
+
+        background-position-x: -750px;
+        background-position-y: -1420px;
+        background-size: cover;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,234 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* RESET */
+
+:root {
+  /* Primary color */
+  --primary-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Secondary color */
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --darkblue-color: hsl(223, 47%, 23%);
+}
+
+body {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--primary-blue);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  max-width: 450px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.card header img {
+  width: 450px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.main {
+  padding: 50px 45px;
+}
+
+.text h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1;
+  color: #1f2f56;
+  margin-bottom: 20px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.text p {
+  text-align: center;
+  color: #7280a7;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+/* ANNUAL PLAN */
+
+#grow0 {
+  flex-grow: 0;
+}
+
+#grow1 {
+  flex-grow: 1;
+}
+
+#grow2 {
+  flex-grow: 2;
+  text-align: right;
+}
+
+#grow2 a {
+  font-weight: 700;
+  line-height: 1;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+#grow2 a:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.annual-plan {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  background-color: var(--very-pale-blue);
+  align-items: center;
+  border-radius: 10px;
+}
+
+.annual-plan h4 {
+  font-weight: 900;
+  font-size: 16px;
+  font-family: "Red Hat Display";
+  margin-bottom: 5px;
+  color: var(--darkblue-color);
+}
+
+.annual-plan p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--desaturated-blue);
+}
+
+.btn_payment {
+  margin: 30px 0;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  border-radius: 15px;
+  border: 0;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  box-shadow: 5px 5px 50px var(--desaturated-blue);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.btn_payment:hover {
+  background: #766cf1;
+  box-shadow: 5px 5px 50px var(#766cf1);
+}
+
+.card_footer > .link__order {
+  text-align: center;
+  display: block;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.card_footer > .link__order:hover {
+  color: var(--darkblue-color);
+}
+
+/* FOOTER CREDITOS */
+
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer span {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--darkblue-color);
+}
+
+.footer span a {
+  color: var(--bright-blue);
+}
+
+.footer span a:hover {
+  color: var(--desaturated-blue);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90vw;
+  }
+
+  .main {
+    padding: 30px 20px;
+  }
+
+  .text h1 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .annual-plan {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .annual-plan h4 {
+    font-size: 14px;
+  }
+
+  .annual-plan p {
+    font-size: 14px;
+  }
+
+  .annual-plan a {
+    font-size: 14px;
+  }
+}
