@@ -1,0 +1,24 @@
+@media (max-width: 650px) {
+    .main {
+        max-width: 375px; 
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: block;
+    }
+
+    .card {
+        grid-template-columns: auto;
+        grid-template-areas: "MinhaArea";
+    }
+
+    .card-left {
+        border-bottom-left-radius: 0px;
+    }
+
+    .card-right {
+        border-bottom-left-radius: 5px;
+    }
+}

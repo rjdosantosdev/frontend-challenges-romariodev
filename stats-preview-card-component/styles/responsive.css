@@ -1,0 +1,102 @@
+/* estilo mobile */
+@media only screen and (max-width: 425px) {
+    .container {
+        max-width: 375px;
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        max-width: 100%;
+        max-height: 780px;
+    }
+
+    .card__content {
+        padding: 30px 5px 30px 5px;
+    }
+
+    .card__content h1 {
+        font-size: 24px;
+        text-align: center;
+    }  
+    
+    .card__content p {
+        font-size: 18px;
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto 30px auto;
+    }
+
+    .nav-info {
+        display: block;
+        margin-right: 0;
+        text-align: center;
+        position: static;
+        top: auto;
+    }
+
+    .nav-info h3 {
+        font-size: 36px;
+        line-height: 1;
+        margin-top: 15px;
+    }
+
+    .card__img img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .card__img:after {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .footer {
+        position: static;
+        padding: 40px 0;
+    }
+
+}
+
+/* estilos para tablet */
+@media (min-width: 426px) and (max-width: 1123px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        max-width: 100%;
+        max-height: 780px;
+    }
+
+    .card__img img {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .card__img:after {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px; 
+        border-bottom-right-radius: 0px;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+}
