@@ -104,7 +104,6 @@ body {
   border: none;
   background-color: var(--Dark-cyan);
   border-radius: 8px;
-
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -117,12 +116,13 @@ body {
   background-color: var(--Very-dark-blue);
 }
 
-.cartImg {
-  background-image: url("./images/image-product-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 600px;
-  border-radius: 8px 0px 0px 8px;
+.attribution {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media (max-width: 700px) {
@@ -131,8 +131,52 @@ body {
     width: 90vw;
     margin: 30px auto;
   }
+
   .attribution {
     padding: 20px;
     line-height: 1.5rem;
+  }
+
+  picture img {
+    border-radius: 8px 8px 0px 0px;
+  }
+}
+
+@media (max-width: 340px) {
+  .addToCart {
+    padding: 1.5rem;
+  }
+  .addToCart h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: var(--Very-dark-blue);
+    margin-top: 18px;
+    margin-bottom: 24px;
+  }
+
+  .addToCart p {
+    font-size: 0.938rem;
+    line-height: 1.125rem;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .addToCart .price {
+    font-size: 1.8rem;
+    line-height: 2.438rem;
+  }
+
+  .attribution {
+    padding: 20px;
+    line-height: 1.5rem;
+  }
+
+  .attribution {
+    font-size: 0.75rem;
   }
 }
